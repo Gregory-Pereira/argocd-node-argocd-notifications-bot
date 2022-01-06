@@ -1,0 +1,30 @@
+{
+  "name": "argocd-node-argocd-notifications-bot",
+  "version": "1.0.0",
+  "description": "the node js server of a bot for argocd-notificaitons. It should take syncstatuses of argocd and comment back on issues.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gregory-Pereira/argocd-node-argocd-notifications-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gregory-Pereira/argocd-node-argocd-notifications-bot/issues"
+  },
+  "homepage": "https://github.com/Gregory-Pereira/argocd-node-argocd-notifications-bot#readme",
+  "dependencies": {
+    "dotenvrc": "^1.0.1",
+    "express": "^4.17.2",
+    "octokit": "^1.7.1",
+    "probot": "^12.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
