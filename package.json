@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "the node js server of a bot for argocd-notificaitons. It should take syncstatuses of argocd and comment back on issues.",
   "main": "index.js",
+  "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "probot run ./index.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +14,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Gregory-Pereira/argocd-node-argocd-notifications-bot/issues"
   },
@@ -22,9 +22,18 @@
     "dotenvrc": "^1.0.1",
     "express": "^4.17.2",
     "octokit": "^1.7.1",
-    "probot": "^12.1.4"
+    "probot": "^12.1.4",
+    "smee-client": "^1.2.2"
   },
   "devDependencies": {
+    "jest": "^26.6.3",
+    "nock": "^13.0.5",
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": ">= 10.13.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
